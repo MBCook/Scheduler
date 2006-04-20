@@ -1,0 +1,13 @@
+This is the most useful personal program I ever wrote. I always found it difficult to figure out my college schedule because of all the permutations of possible sections and courses I could take.
+
+So I made this little tool. It takes an input file (testdata.txt) that describes all the courses and sections available. When you launch the program you just check the courses you want and press "Calculate Schedules". The program brute forces every possible combination of sections and gives you all your options. As you click on them, they are displayed on a calendar of the week so you can easily see when times are busy.
+
+I ended up showing this program, off hand, to one of the faculty members involved in scheduling students and it became my senior project. An updated version was made that did client/server communication and had a web interface to make it easy for faculty to enter the courses.
+
+The format of the text file is pretty simple. There are two kinds of lines: course and section. A course line lists the name of the course and any co-reqs (so we can determine you forgot to select a lab, but that code is slightly buggy).
+
+C:CS101:CS101Lab - Registers a course named CS101 that requires CS101Lab to be selected
+
+The other lines are section lines. They list the course, the section name (one option), and the days/times the course runs.
+
+S:CS101:A:M:1000:1150:TH:800:950 - A section of CS101, named A, Mondays and Thursdays
